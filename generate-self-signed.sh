@@ -1,5 +1,4 @@
 #!/bin/bash
-set -x
 
 DOMAIN=${1-localhost}
 VALID_DAYS=${2-365}
