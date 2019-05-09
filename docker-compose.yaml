@@ -1,9 +1,14 @@
 version: '3'
 services:
   nginx:
-    image: "nginx"
+    build: 
+      context: .
+    image: nginx-selfsigned:0.1.6
+    environment:
+      DOMAIN: "localhost"
+      VALID_DAYS: 365
+      ALT_NAMES: "*.lcl"
     volumes: 
-      - ./nginx-selfsigned:/etc/nginx/conf.d
+      - ./conf:/etc/nginx/conf.d
     ports: 
      - 443:443
-     - 80:80
