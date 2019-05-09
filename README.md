@@ -40,6 +40,7 @@ You can place whatever valid nginx config you want in this dirctory and the cont
 The default config that's in that directory maps:
 * https://localhost
 * https://example.lcl
+
 To port `443` on the internal docker host address which is used on [docker for mac](https://docs.docker.com/docker-for-mac/networking/).
 
 ### customizing
