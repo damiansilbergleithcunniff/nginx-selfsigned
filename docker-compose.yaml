@@ -3,7 +3,7 @@ services:
   nginx:
     build: 
       context: .
-    image: nginx-selfsigned:0.1.6
+    image: damiansilbergleithcunniff/nginx-selfsigned:0.1.6
     environment:
       DOMAIN: "localhost"
       VALID_DAYS: 365
